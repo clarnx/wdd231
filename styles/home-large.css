@@ -1,0 +1,22 @@
+@media (min-width: 769px) {
+	nav ul {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul li {
+		margin: 0 10px;
+	}
+
+	main {
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"card1 card2"
+			"card3 card3";
+	}
+
+	#courses {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
