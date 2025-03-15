@@ -1,0 +1,85 @@
+
+{
+  "members": [
+    {
+      "name": "Tema Textiles",
+      "address": "123 Market Street, Tema, Accra",
+      "phone": "223-555-1234",
+      "website": "https://tema-textiles.com",
+      "image": "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg",
+      "membershipLevel": 3,
+      "description": "Traditional fabrics and modern designs inspired by Accra's rich textile heritage.",
+      "category": "Retail"
+    },
+    {
+      "name": "Desert Edge Tours",
+      "address": "45 Sahara Avenue, Tema, Accra",
+      "phone": "223-555-2345",
+      "website": "https://desert-edge.com",
+      "image": "https://images.pexels.com/photos/14447085/pexels-photo-14447085.jpeg",
+      "membershipLevel": 2,
+      "description": "Award-winning guided tours of the Sahara desert and surrounding regions.",
+      "category": "Tourism"
+    },
+    {
+      "name": "Sahel Solutions",
+      "address": "78 Tech Boulevard, Tema, Accra",
+      "phone": "223-555-3456",
+      "website": "https://sahelsolutions.com",
+      "image": "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg",
+      "membershipLevel": 3,
+      "description": "Providing IT solutions and support for local businesses and organizations.",
+      "category": "Technology"
+    },
+    {
+      "name": "M & M Bank",
+      "address": "10 Finance Street, Tema, Accra",
+      "phone": "223-555-4567",
+      "website": "https://mnmbank.com",
+      "image": "https://images.pexels.com/photos/7598376/pexels-photo-7598376.jpeg",
+      "membershipLevel": 3,
+      "description": "Full-service banking and financial advisory with a focus on community development.",
+      "category": "Finance"
+    },
+    {
+      "name": "Tema Treasures",
+      "address": "34 Artisan Lane, Tema, Accra",
+      "phone": "223-555-5678",
+      "website": "https://tematreasures.com",
+      "image": "https://images.pexels.com/photos/7031596/pexels-photo-7031596.jpeg",
+      "membershipLevel": 2,
+      "description": "Supporting local artisans by selling authentic handcrafted souvenirs and art.",
+      "category": "Retail"
+    },
+    {
+      "name": "Sahara Sips",
+      "address": "56 Cafe Road, Tema, Accra",
+      "phone": "223-555-6789",
+      "website": "https://saharasips.com",
+      "image": "https://images.pexels.com/photos/30652881/pexels-photo-30652881/free-photo-of-charming-spanish-villa-in-tranquil-setting.jpeg",
+      "membershipLevel": 1,
+      "description": "Serving locally-sourced beverages and light meals in a traditional setting.",
+      "category": "Food & Beverage"
+    },
+    {
+      "name": "TM Manuscripts",
+      "address": "89 Heritage Road, Tema, Accra",
+      "phone": "223-555-7890",
+      "website": "https://tmmanuscripts.com",
+      "image": "https://images.pexels.com/photos/8031881/pexels-photo-8031881.jpeg",
+      "membershipLevel": 1,
+      "description": "Preserving and sharing the ancient manuscripts of Tema with the world.",
+      "category": "Education"
+    },
+    {
+      "name": "Tema Medical Center",
+      "address": "12 Health Street, Tema, Accra",
+      "phone": "223-555-8901",
+      "website": "https://temamedical.com",
+      "image": "https://images.pexels.com/photos/30725673/pexels-photo-30725673/free-photo-of-modern-new-orleans-home-with-green-lawn.jpeg",
+      "membershipLevel": 2,
+      "description": "Providing high-quality healthcare services to the local community.",
+      "category": "Healthcare"
+    }
+  ]
+}
