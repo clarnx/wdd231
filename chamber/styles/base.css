@@ -308,6 +308,7 @@ footer {
   .hero-button {
     bottom: 15px;
     right: 15px;
+    text-decoration: none;
   }
   
   .directory-grid {
@@ -330,6 +331,7 @@ footer {
     transform: translate(-50%, -50%);
     bottom: auto;
     right: auto;
+    text-decoration: none;
   }
   
 

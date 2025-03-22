@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Home - Tema Chamber of Commerce</title>
+    <meta name="description" content="Homepage of the Tema Chamber of Commerce - Find local businesses and services in Tema">
+    <meta name="author" content="Clarence Ahiabor">
+
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Home - Tema Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/seed/picsum/200/300">
+    <meta property="og:url" content="https://picsum.photos/seed/picsum/200/300">
+
+    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/mobile-menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+     <div class="min-h-screen flex-col">
+    <header>
+      <div class="container header-container">
+        <div class="logo-container">
+          <div class="logo-image">
+            <img src="images/tema_coc_logo.png" alt="Tema Chamber Logo" width="48" height="48">
+          </div>
+          <a href="index.html" class="logo">
+            <span class="logo-title">Tema</span>
+            <span class="logo-subtitle">Chamber of Commerce</span>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-button">≡</button>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" style="display: none;">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-button">✕</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <main>
+     <div class="hero">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="images/accra.jpg" alt="Accra city view" width="1200" height="400">
+          </div>
+        </div>
+        <a class="hero-button" href="#" >REGISTER NOW</a>
+      </div>
+      
+      <div class="container">
+        <h2>Home</h2>
+        
+        <div class="home-grid">
+          <section class="events-section">
+            <h3 class="section-header">Events</h3>
+            <div class="events-content">
+              <p>Upcoming events will be displayed here</p>
+            </div>
+          </section>
+          
+          <section class="weather-section">
+            <h3 class="section-header">Current Weather</h3>
+            <div class="weather-content">
+              <div class="weather-icon">
+                <span></span>
+              </div>
+              <div class="weather-info">
+                <p class="temperature"></p>
+                <p class="weather-description">Current weather is loading...</p>
+              </div>
+              <div class="weather-details">
+              </div>
+            </div>
+          </section>
+          
+          <section class="forecast-section">
+            <h3 class="section-header">Weather Forecast</h3>
+            <div class="forecast-content">
+              <div class="forecast-day">
+               Weather forecast is loading...
+              </div>
+              <div class="forecast-day">
+                
+              </div>
+              <div class="forecast-day">
+                
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <section class="business-directory">
+          <h3>Featured Businesses</h3>
+          <div class="business-grid">
+            <div class="business-card">
+              <h4>Timbuktu Textiles</h4>
+              <p class="business-tagline">Traditional Fabrics & Modern Designs</p>
+              <div class="business-content">
+                <div class="business-image">
+                  <img src="images/textiles.jpg" alt="Timbuktu Textiles">
+                </div>
+                <div class="business-info">
+                  <p><strong>EMAIL:</strong> info@timbuktu-textiles.com</p>
+                  <p><strong>PHONE:</strong> 800-555-1234</p>
+                  <p><strong>URL:</strong> timbuktu-textiles.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="business-card">
+              <h4>Desert Edge Tours</h4>
+              <p class="business-tagline">Explore the Sahara</p>
+              <div class="business-content">
+                <div class="business-image">
+                  <img src="images/tours.jpg" alt="Desert Edge Tours">
+                </div>
+                <div class="business-info">
+                  <p><strong>EMAIL:</strong> bookings@desert-edge.com</p>
+                  <p><strong>PHONE:</strong> 800-555-2345</p>
+                  <p><strong>URL:</strong> desert-edge.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="business-card">
+              <h4>Sahel Solutions</h4>
+              <p class="business-tagline">Tech Support for Your Business</p>
+              <div class="business-content">
+                <div class="business-image">
+                  <img src="images/tech.jpg" alt="Sahel Solutions">
+                </div>
+                <div class="business-info">
+                  <p><strong>EMAIL:</strong> help@sahelsolutions.com</p>
+                  <p><strong>PHONE:</strong> 800-555-3456</p>
+                  <p><strong>URL:</strong> sahelsolutions.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-info">
+          <p class="footer-title">Tema Chamber of Commerce</p>
+          <p>10 Rue De La SK</p>
+          <p>Tema, 703</p>
+          <p>info@temachamber.org</p>
+          <p>(223) 555-2300</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"><img src="images/facebook.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+          <a href="https://twitter.com"><img src="images/twitter.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+          <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+        </div>
+        
+        <div class="footer-info-2">
+          <p>WDD231 Class Project</p>
+          <p>Clarence Ahiabor</p>
+          <p>&copy; <span id="currentYear"></span> Tema Chamber of Commerce</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
