@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Thanks You - Tema Chamber of Commerce</title>
+    <meta name="description" content="Thank You - Tema Chamber of Commerce">
+    <meta name="author" content="Clarence Ahiabor">
+
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/thankyou.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Thank You - Tema Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/seed/picsum/200/300">
+    <meta property="og:url" content="https://picsum.photos/seed/picsum/200/300">
+
+    <script src="scripts/mobile-menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+     <div class="min-h-screen flex-col">
+    <header>
+      <div class="container header-container">
+        <div class="logo-container">
+          <div class="logo-image">
+            <img src="images/tema_coc_logo.png" alt="Tema Chamber Logo" width="48" height="48">
+          </div>
+          <a href="index.html" class="logo">
+            <span class="logo-title">Tema</span>
+            <span class="logo-subtitle">Chamber of Commerce</span>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-button">≡</button>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" style="display: none;">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-button">✕</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+  <main>
+      <div class="container">
+        <div class="thank-you-container">
+          <h1>Thank You!</h1>
+          <p>Your application has been submitted successfully.</p>
+          <p>We are excited to welcome you to the Tema Chamber of Commerce!</p>
+          
+          <div class="submission-details">
+            <h2>Submission Details</h2>
+            <div id="submissionData">
+              <!-- Form data will be displayed here via JavaScript -->
+            </div>
+          </div>
+          
+          <div class="next-steps">
+            <h2>Next Steps</h2>
+            <p>A representative will contact you soon to complete your membership process.</p>
+            <p>In the meantime, feel free to <a href="discover.html">explore our community</a> or <a href="directory.html">view our member directory</a>.</p>
+          </div>
+          
+          <a href="index.html" class="home-button">Return to Homepage</a>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-info">
+          <p class="footer-title">Tema Chamber of Commerce</p>
+          <p>10 Rue De La SK</p>
+          <p>Tema, 703</p>
+          <p>info@temachamber.org</p>
+          <p>(223) 555-2300</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"><img src="images/facebook.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+          <a href="https://twitter.com"><img src="images/twitter.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+          <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+        </div>
+        
+        <div class="footer-info-2">
+          <p>WDD231 Class Project</p>
+          <p>Clarence Ahiabor</p>
+          <p>&copy; <span id="currentYear"></span> Tema Chamber of Commerce</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

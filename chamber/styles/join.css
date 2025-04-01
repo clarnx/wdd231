@@ -1,0 +1,299 @@
+/* Form Layout */
+.join-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.join-form-container,
+.membership-levels {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-button {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Membership Cards */
+.membership-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.membership-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.membership-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.membership-details {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.membership-details:hover {
+  background-color: #555;
+}
+
+/* Card Animations */
+/* .np-card {
+  animation: slideIn 0.6s ease-out 0.1s both;
+}
+
+.bronze-card {
+  animation: slideIn 0.6s ease-out 0.2s both;
+}
+
+.silver-card {
+  animation: slideIn 0.6s ease-out 0.3s both;
+}
+
+.gold-card {
+  animation: slideIn 0.6s ease-out 0.4s both;
+} */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Colors */
+.np-card {
+  border-top: 4px solid #6c757d;
+}
+
+.bronze-card {
+  border-top: 4px solid #cd7f32;
+}
+
+.silver-card {
+  border-top: 4px solid #c0c0c0;
+}
+
+.gold-card {
+  border-top: 4px solid #ffd700;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 600px;
+  /* animation: modalFadeIn 0.3s; */
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-modal {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #555;
+}
+
+/* Thank You Page Styles */
+.thank-you-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.thank-you-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.submission-details {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.submission-details h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.submission-details p {
+  margin: 0.5rem 0;
+}
+
+.submission-details strong {
+  display: inline-block;
+  width: 120px;
+}
+
+.next-steps {
+  margin: 2rem 0;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  /* transition: background-color 0.3s; */
+}
+
+.home-button:hover {
+  background-color: #555;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .join-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .join-form-container {
+    flex: 2;
+  }
+
+  .membership-levels {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .membership-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .membership-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .membership-levels {
+    overflow-x: hidden;
+  }
+}
