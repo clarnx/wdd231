@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Discover - Tema Chamber of Commerce</title>
+    <meta name="description" content="Discover the Tema Chamber of Commerce - Find local businesses and services in Tema">
+    <meta name="author" content="Clarence Ahiabor">
+
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/discover.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Discover - Tema Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/seed/picsum/200/300">
+    <meta property="og:url" content="https://picsum.photos/seed/picsum/200/300">
+
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/mobile-menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+     <div class="min-h-screen flex-col">
+    <header>
+      <div class="container header-container">
+        <div class="logo-container">
+          <div class="logo-image">
+            <img src="images/tema_coc_logo.png" alt="Tema Chamber Logo" width="48" height="48">
+          </div>
+          <a href="index.html" class="logo">
+            <span class="logo-title">Tema</span>
+            <span class="logo-subtitle">Chamber of Commerce</span>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-button">≡</button>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" style="display: none;">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-button">✕</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <main>
+      <div class="container">
+        <div class="discover-header">
+          <h1>Discover Tema</h1>
+          <div id="visit-message" class="visit-message"></div>
+        </div>
+        
+        <div class="discover-about">
+          <h2>About Tema</h2>
+          <p>Tema is a city on the Atlantic coast of Ghana.</p>
+          <p>It is located 25 kilometres east of the capital city; Accra, in the region of Greater Accra, and is the capital of the Tema Metropolitan District.</p>
+        </div>
+        
+        <h2>Places of Interest</h2>
+        <div class="discover-grid" id="discover-grid">
+          
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-info">
+          <p class="footer-title">Tema Chamber of Commerce</p>
+          <p>10 Rue De La SK</p>
+          <p>Tema, 703</p>
+          <p>info@temachamber.org</p>
+          <p>(223) 555-2300</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"><img src="images/facebook.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+          <a href="https://twitter.com"><img src="images/twitter.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+          <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Tema Chamber Logo" width="48" height="auto"></a>
+        </div>
+        
+        <div class="footer-info-2">
+          <p>WDD231 Class Project</p>
+          <p>Clarence Ahiabor</p>
+          <p>&copy; <span id="currentYear"></span> Tema Chamber of Commerce</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

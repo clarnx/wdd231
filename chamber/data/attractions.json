@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Tema Harbour",
+    "image": "images/discover/tema_harbour.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "One of the largest seaports in West Africa, Tema Harbour plays a critical role in the region's trade and economy."
+  },
+  {
+    "title": "Tema Beach",
+    "image": "images/discover/tema_beach.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "A popular beach destination for both locals and tourists, offering a serene atmosphere and beautiful coastline."
+  },
+  {
+    "title": "A1 Raceway",
+    "image": "images/discover/a1_raceway.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "A motorsports venue known for its high-speed straights and technical turns for hosting car events and community driving experiences year-round."
+  },
+  {
+    "title": "Wonderland Park",
+    "image": "images/discover/wonderland_park.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "Wonderland Kids Park offers a sensational array of kids’ games and activities throughout the year with amazing facilities."
+  },
+  {
+    "title": "Tema Sports Stadium",
+    "image": "images/discover/tema_sports_stadium.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "A major sports facility in Tema used for football and other sporting events, hosting local and international matches."
+  },
+  {
+    "title": "Tema Market",
+    "image": "images/discover/tema_market.png",
+    "address": "Community 1, Tema, Ghana",
+    "description": "A bustling market where locals can shop for fresh produce, textiles, and other goods, showcasing the vibrant culture of Tema."
+  },
+  {
+    "title": "Tema Lagoon",
+    "image": "images/discover/tema_lagoon.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "A scenic lagoon offering a peaceful natural setting, ideal for birdwatching and a serene escape from city life."
+  },
+  {
+    "title": "Tema Golf park",
+    "image": "images/discover/tema_golf_park.png",
+    "address": "Tema, Greater Accra Region, Ghana",
+    "description": "Tema golf park is dedicated and versatile venue that caters to both golf enthusiasts and event organizers"
+  }
+]
