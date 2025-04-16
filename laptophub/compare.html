@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Laptops | Laptop Hub</title>
+    <meta
+      name="description"
+      content="Compare different laptop models side by side with detailed specifications and expert insights."
+    />
+    <meta name="author" content="Laptop Hub" />
+
+    <meta property="og:title" content="Compare Laptops | Laptop Hub" />
+    <meta
+      property="og:description"
+      content="Compare different laptop models side by side with detailed specifications and expert insights."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://laptophub.io/opengraph-image.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@laptop_hub" />
+    <meta
+      name="twitter:image"
+      content="https://laptophub.io/opengraph-image.png"
+    />
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/compare.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Laptop Hub Logo" width="120" />
+          </a>
+        </div>
+        <nav>
+          <button id="menu-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="compare.html" class="active">Compare</a></li>
+            <li><a href="guides.html">Guides</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Compare Laptops</h1>
+        <p>
+          Select up to three laptops to compare specifications side-by-side.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-tool">
+      <div class="container">
+        <div class="laptop-selectors">
+          <div class="laptop-selector">
+            <label for="laptop1">Laptop 1</label>
+            <select id="laptop1" class="laptop-select">
+              <option value="">Select Laptop</option>
+            </select>
+          </div>
+          <div class="laptop-selector">
+            <label for="laptop2">Laptop 2</label>
+            <select id="laptop2" class="laptop-select">
+              <option value="">Select Laptop</option>
+            </select>
+          </div>
+          <div class="laptop-selector">
+            <label for="laptop3">Laptop 3</label>
+            <select id="laptop3" class="laptop-select">
+              <option value="">Select Laptop</option>
+            </select>
+          </div>
+        </div>
+        <button id="compare-btn" class="btn btn-primary">Compare</button>
+      </div>
+    </section>
+
+    <section class="comparison-results">
+      <div class="container">
+        <div id="comparison-table-container">
+          <p id="no-selection-message">
+            Please select at least two laptops to compare.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Laptop Hub</h3>
+            <p>
+              Your trusted source for laptop recommendations, comparisons, and
+              buying guides.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/social/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#" aria-label="Twitter"
+                ><img src="images/social/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="#" aria-label="Instagram"
+                ><img src="images/social/instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#" aria-label="YouTube"
+                ><img src="images/social/youtube.svg" alt="YouTube"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="compare.html">Compare</a></li>
+              <li><a href="guides.html">Guides</a></li>
+              <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="guides.html#gaming">Gaming Laptops</a></li>
+              <li><a href="guides.html#business">Business Laptops</a></li>
+              <li><a href="guides.html#student">Student Laptops</a></li>
+              <li><a href="guides.html#creative">Creative Laptops</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <address>
+              <p>
+                Email: <a href="mailto:info@laptophub.io">info@laptophub.io</a>
+              </p>
+              <p>Phone: (555) 123-4567</p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Laptop Hub. All rights reserved.</p>
+          <p><a href="attributions.html">Attributions</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/compare.js"></script>
+  </body>
+</html>

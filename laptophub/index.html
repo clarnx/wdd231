@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop Hub - Expert Laptop Recommendations & Comparisons</title>
+    <meta
+      name="description"
+      content="Find the perfect laptop with expert recommendations, detailed comparisons, and buying guides at Laptop Hub."
+    />
+    <meta name="author" content="Laptop Hub" />
+
+    <meta
+      property="og:title"
+      content="Laptop Hub - Expert Laptop Recommendations & Comparisons"
+    />
+    <meta
+      property="og:description"
+      content="Find the perfect laptop with expert recommendations, detailed comparisons, and buying guides at Laptop Hub."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://laptophub.io/opengraph-image.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@laptop_hub" />
+    <meta
+      name="twitter:image"
+      content="https://laptophub.io/opengraph-image.png"
+    />
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Laptop Hub Logo" width="120" />
+          </a>
+        </div>
+        <nav>
+          <button id="menu-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="guides.html">Guides</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Find Your Perfect Laptop</h1>
+          <p>
+            Expert recommendations, detailed comparisons, and helpful guides to
+            simplify your laptop buying decision.
+          </p>
+          <div class="cta-buttons">
+            <a href="compare.html" class="btn btn-primary">Compare Laptops</a>
+            <a href="guides.html" class="btn btn-secondary"
+              >View Buying Guides</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+            alt="Modern laptop on desk"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-laptops">
+      <div class="container">
+        <h2>Featured Laptops</h2>
+        <div class="laptop-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="gaming">Gaming</button>
+          <button class="filter-btn" data-category="business">Business</button>
+          <button class="filter-btn" data-category="student">Student</button>
+        </div>
+        <div class="laptop-grid" id="laptop-list"></div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2>Browse By Category</h2>
+        <div class="category-grid">
+          <div class="category-card">
+
+            <h3>Gaming Laptops</h3>
+            <p>High performance machines for the ultimate gaming experience</p>
+            <a href="guides.html#gaming" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="category-card">
+          
+            <h3>Business Laptops</h3>
+            <p>Reliable and secure laptops for professional use</p>
+            <a href="guides.html#business" class="btn btn-outline"
+              >Learn More</a
+            >
+          </div>
+          <div class="category-card">
+          
+            <h3>Student Laptops</h3>
+            <p>Affordable and portable options for education</p>
+            <a href="guides.html#student" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="category-card">
+            
+            <h3>Creative Laptops</h3>
+            <p>
+              Powerful machines for design, video editing, and creative work
+            </p>
+            <a href="guides.html#creative" class="btn btn-outline"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <h2>Stay Updated</h2>
+        <p>
+          Subscribe to our newsletter for the latest laptop news, reviews, and
+          buying guides.
+        </p>
+        <form id="newsletter-form" class="newsletter-form">
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <div class="form-feedback" id="form-feedback"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Laptop Hub</h3>
+            <p>
+              Your trusted source for laptop recommendations, comparisons, and
+              buying guides.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/social/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#" aria-label="Twitter"
+                ><img src="images/social/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="#" aria-label="Instagram"
+                ><img src="images/social/instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#" aria-label="YouTube"
+                ><img src="images/social/youtube.svg" alt="YouTube"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="compare.html">Compare</a></li>
+              <li><a href="guides.html">Guides</a></li>
+              <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="guides.html#gaming">Gaming Laptops</a></li>
+              <li><a href="guides.html#business">Business Laptops</a></li>
+              <li><a href="guides.html#student">Student Laptops</a></li>
+              <li><a href="guides.html#creative">Creative Laptops</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <address>
+              <p>
+                Email: <a href="mailto:info@laptophub.io">info@laptophub.io</a>
+              </p>
+              <p>Phone: (555) 123-4567</p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Laptop Hub. All rights reserved.</p>
+          <p><a href="attributions.html">Attributions</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="laptop-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

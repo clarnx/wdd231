@@ -1,0 +1,184 @@
+.guides-nav {
+  margin-bottom: 3rem;
+}
+
+#guide-tabs {
+  display: flex;
+  list-style: none;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+#guide-tabs::-webkit-scrollbar {
+  display: none; 
+}
+
+#guide-tabs li {
+  padding: 0;
+}
+
+#guide-tabs a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #64748b;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#guide-tabs a:hover {
+  color: #38bdf8;
+}
+
+#guide-tabs a.active {
+  color: #38bdf8;
+  border-bottom-color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Guide Content */
+.guide-section {
+  display: none;
+}
+
+.guide-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.guide-section h2 {
+  margin-bottom: 2rem;
+}
+
+.guide-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.guide-intro img {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.guide-intro h3 {
+  margin-bottom: 1rem;
+}
+
+.guide-tips {
+  margin-bottom: 3rem;
+}
+
+.guide-tips h3 {
+  margin-bottom: 1.5rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.tip-card h4 {
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.guide-checklist {
+  background-color: #f8fafc;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border-left: 4px solid #38bdf8;
+}
+
+.guide-checklist h3 {
+  margin-bottom: 1.5rem;
+}
+
+.guide-checklist ul {
+  list-style-type: none;
+}
+
+.guide-checklist li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.guide-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.recommended-laptops {
+  margin-top: 3rem;
+}
+
+.recommended-laptops h3 {
+  margin-bottom: 1.5rem;
+}
+
+.laptop-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .guide-intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  #guide-tabs a {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .guide-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .guide-checklist {
+    padding: 1.5rem;
+  }
+}
